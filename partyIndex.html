@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Party Creation</title>
+	<link rel="stylesheet" type="text/css" href="FinalStyles.css" />
+	<link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<script src="javascript.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Party Creation</h1>
+	</header>
+<div id="Navi">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="partyIndex.html">Party Creation</a></li>
+				<li><a href="Trivia.html">Trivia</a></li>
+			</ul>
+		</nav>	
+</div>
+<div id="party">
+	<img src="images/EOVparty.png" alt = "EOIV" class="center" />
+</div>
+	
+	<form id="character" action="index.html">
+		<fieldset>
+			<legend>Party Info</legend>
+			<ol>
+				<li>
+					<label for="guildname">Guild's Name</label>
+					<input type="text" name="name" id="guildname" autofocus="" />
+					<p class="partyError error" id="guildname_error"> *Required field</p>
+				</li>
+				<li>
+					<label for="Occupation">Guild's Occupation</label>
+					<input type="text" name="Occupation" id="Occupation" />
+					<p class="partyError error" id="occupation_error"> *Required field</p>
+				</li>
+				<li>
+					<label for="partymembers">Number of Party members</label>
+					<input type="number" name="partymembers" id="partymembers" />
+					<p class="partyError error" id="numparty_error"> *Required field</p>
+				</li>
+			</ol>
+		</fieldset>
+		<fieldset>
+			<legend>Squad Skills</legend>
+			<ol>
+				<li>
+					<input type="radio" name="squadskill" id="Boost" />
+					<label for="Boost">Boost</label>
+					<p>(Boosts the skill Damage of party members)</p>
+					<input type="radio" name="squadskill" id="force" />
+					<label for="force">Force</label>
+					<p>(Alters the effect of skills of party members)</p>
+					<input type="radio" name="squadskill" id="union" />
+					<label for="union">Union</label>
+					<p>(Do group skills base on how many member participate)</p>
+					<p class="skillTypeError error" id="skillType_error"> * You must choose a squad skill</p>
+				</li>
+			</ol>
+		</fieldset>
+		<fieldset>
+			<legend>Lore for the party</legend>
+			<ol>
+				<li>
+					<label for="backstory">BackStory</label>
+					<textarea name="backstory" id="backstory" rows="2" placeholder="Insert Lore here"></textarea>
+				</li>
+			</ol>
+		</fieldset>
+		<fieldset>
+			<legend>Save your current Party</legend>
+			<label for="save">Save with your email</label>
+			<input type="email" name="save" id="save" placeholder="Eg praisethesun@gmail.com" />
+		</fieldset>
+		<fieldset>
+			<legend>Upload/save Party</legend>
+			<label for="upload">Upload party via URL</label>
+			<input id="email" name="email" type="text" />
+			<input type="URL" name="upload" id="upload" />
+			<p class="emailError error" id="email_error">* Required field</p>
+			<p class="emailError error" id="emailformat_error">* Invalid email address</p>
+		</fieldset>
+		<fieldset>
+			<legend>Finalize Party</legend>
+			<button type="submit">Create</button>
+			<button type="Reset">Reset</button>
+		</fieldset>
+	</form>
+
+			<footer>
+			<div id="last">
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Labyrinth Map</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+</body>
+</html>

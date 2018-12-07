@@ -1,0 +1,325 @@
+body{
+	
+	font-family: 'Courgette', sans-serif;
+	background: url('images/Book.jpg') no-repeat center center fixed; /*https://www.flickr.com/photos/bochalla/14113986982*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	
+	}
+
+	header{
+		font-size: 25px;
+		text-align: center;
+		text-shadow: 4px 4px 2px #31f952
+	}
+
+#Navi nav{
+		width: 100%;
+		background-color: #97ffa8;
+		border: 2px #000 solid;
+		font-weight: bold;
+		color: #FFF;
+		margin: 0px auto;
+		opacity: 0.8;
+
+	}
+
+	#Navi nav ul{
+		display: flex;
+		list-style: none;
+		padding: 0px;
+	}
+
+	#Navi nav ul li{
+		padding: 10px;
+	}
+
+	#Navi nav ul li a{
+		font-size: 30px;
+	}
+
+	a:link{
+		text-decoration: none;
+
+	}
+	a:visted{
+		color: red;
+	}
+
+	a:hover{
+		text-decoration: underline;
+	}
+
+	a:active{
+		color: red;
+	}
+
+	.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
+#party{
+	display: block;
+    margin-left: 19%;
+    margin-right: auto;
+    width: 60%;
+    position: absolute;
+}
+
+	#jobs table{
+		width: 600px;
+		background-color: #FFF;
+		border: 1px #5E7410;
+		text-align: center;
+		width: 60%;
+		box-shadow: 10px 10px 10px #000;
+		border: solid;
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+/*Table css*/
+	#jobs table caption{
+		font-size: 50px;
+		font-weight: bold;
+		color: #000;
+		text-shadow: 5px 5px 3px #31f952
+	}
+
+
+	#jobs table thead th{
+		background-color: #00df47;
+		font-size: 30px;
+		border: solid;
+	}
+	#jobs table tbody td{
+		font-size: 25px;
+		border: solid;
+	}
+
+	#jobs table tbody th{
+		font-size: 30px;
+		border: solid;
+	
+	}
+
+	#jobs table tbody tr:nth-child(even){
+		background-color: #97ffa8
+	}
+
+	#jobs table tbody tr:hover{
+		background-color: #93ecff;
+	}
+/*Form CSS*/
+form#character{
+	background: #fff;
+	width: 750px;
+	margin: 0px auto;
+	border-radius: 10px;
+	opacity: 0.7;
+}
+
+form#character fieldset{
+	border: 5px solid #196F3D;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	padding: 10px;
+
+}
+
+form#character legend{
+	font-family: 'Volkhov', serif;
+	font-size: 25px;
+	font-weight: bolder;
+	border-radius: 10px;
+	background: #97ffa8;
+}
+
+form#character ol li{
+	font-family: 'Volkhov', serif;
+	font-size: 20px;
+	list-style: none;
+	border-radius: 10px;
+	line-height: 30px;
+	padding: 5px, 10px;
+	font-weight: bolder;
+}
+
+form#character input{
+	font-family: 'Volkhov', serif;
+	border-radius: 10px;
+	background: #97ffa8;
+	font-weight: bolder;
+	margin: 10px;	
+}
+
+
+form#character textarea{
+	border-radius: 10px;
+	width: 150px;
+
+}
+
+form#character label{
+	font-family: 'Volkhov', serif;
+	display: inline-block;
+	width: 200px;
+	
+}
+
+
+form#character button{
+	background: red;
+	border: none;
+	border-radius: 10px;
+	font-family: 'Volkhov', serif;
+	font-size: 20px;
+	margin: auto;
+	padding: 7px 25px;
+}
+
+@media(min-width: 640px){
+	#Navi nav ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	#Navi nav ul li{
+		border: none;
+	}
+
+	#content p img{
+	display: inline;	
+	position: absolute;
+	top: -100px;
+	right: 5px;
+}
+	/*#content h3{
+		text-align: left;
+	}*/
+
+	#Jobs table{
+		display: flex;
+	}
+
+
+}
+
+/*Main-layout css*/
+.main-layout{
+	max-width: 60%;
+  background-color: #97ffa8;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  opacity: 0.8;
+  /*display: flex;*/
+}
+
+.rep-layout{
+	max-width: 40%;
+  background-color: #97ffa8;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  opacity: 0.8;
+}
+
+
+.rep-layout2{
+	max-width: 40%;
+  background-color: #97ffa8;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  opacity: 0.8;
+}
+
+.rep-layout3{
+	max-width: 40%;
+  background-color: #97ffa8;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  opacity: 0.8;
+}
+
+#Rep p img{
+	display: flex;
+    margin-left: 60%;
+    margin-right: auto;
+    max-width: 15%;
+    position: absolute;
+    right: 15%;
+    top: 20%;
+}
+
+#funfacts p img{
+	display: flex;
+    margin-left: 45%;
+    margin-right: auto;
+    max-width: 15%;
+    position: absolute;
+    right: 15%;
+    top: 50%;
+}
+
+#games img{
+	display: flex;
+    margin-left: 50%;
+    margin-right: auto;
+    max-width: 15%;
+    position: absolute;
+    right: 17%;
+    top: 85%;
+}
+
+
+
+.listofjobs{
+	max-width: 40%;
+  	background-color: #97ffa8;
+  	margin: 40px auto 0 auto;
+  	line-height: 1.65;
+  	padding: 20px 50px;
+  	opacity: 0.8;
+  /*display: flex;*/
+}
+
+
+
+/*Footer css*/
+#last{
+	font-size: 25px;
+	margin-left: 210px;
+}
+
+#last nav, #last ul, #last li{
+	display: flex;
+	padding-top: 40px;
+	margin-bottom: -18px;
+}
+
+#last li:after{
+	content: "|";
+}
+
+#last li:last-of-type:after{
+	content: "";
+
+}
+
+#last a{
+	text-decoration: none;
+}
+
+#last a:hover{
+	text-shadow: 1px 1px black;
+}
+
